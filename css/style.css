@@ -77,14 +77,41 @@ header{
     text-align: center;
     
     .img{
-        width: 300px;
-        border-radius: 50px;
+        width: 85%;
+        height: 400px;
+        border-radius: 5px;
     }
-    .girgenti .img{
-        width: 400px;      
-    }
+   
+   
+}
+.girgenti .img{
+    width: 95%;
 }
 
+.dilascio {
+    border: 5px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px black;
+    cursor: default;
+    transition: all 400ms ease;    
+}
+.dilascio:hover{
+    box-shadow: 1px 1px 20px black;
+    transform: translateY(-3%);
+}
+.girgenti{
+    border: 5px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px black;
+    cursor: default;
+    transition: all 400ms ease; 
+}
+.girgenti:hover{
+    box-shadow: 1px 1px 20px black;
+    transform: translateY(-3%);
+}
 .datos{
    
     border: 5px solid black;
@@ -119,10 +146,13 @@ header{
 
 
 
-@media screen and (width < 768px){
-    .encabezado{flex-direction: column; }
-    nav.menu{ flex-direction: column;}
-    .datos{ flex-direction: column;}
-    .beneficios{ flex-direction: column;}
-    .pie{ flex-direction: column;}
+@media (max-width: 800px){
+    .container-primary{color: wheat}
+   
+}
+@media (min-width: 600px){
+    .container-primary{
+        background-color: #2991E5;
+        flex-direction: column;
+    }
 }
